@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -50,10 +50,47 @@
       <li><code>&lt;form&gt;</code> — Collect user input</li>
     </ul>
 
+    <h3 class="text-xl font-semibold mt-6 mb-2">Table Sample</h3>
+    <table class="min-w-full table-auto border-separate border border-gray-300">
+        <tr>
+            <th class="border px-4 py-2">Last Name</th>
+            <th class="border px-4 py-2">First Name</th>
+            <th class="border px-4 py-2">Middle Name</th>
+        </tr>
+        <tr>
+            <td class="border px-4 py-2">Reeves</td>
+            <td class="border px-4 py-2">Keanu</td>
+            <td class="border px-4 py-2">Charles</td>
+        </tr>
+    </table>
+
+    <h3 class="text-xl font-semibold mt-6 mb-2">Image Sample</h3>
+    <pre class="bg-gray-100 p4 rounded"><code>
+        &lt;img src="imagesample.jpg alt="image"&gt;
+    </code></pre>
+    <img src="imagesample.jpg" alt="image" height="4px">
+
     <h3 class="text-xl font-semibold mt-6 mb-2">Why Learn HTML?</h3>
     <p>
       HTML is the first step in web development. Once you master it, you’ll be ready to move on to CSS for design and JavaScript for interactivity.
     </p>
+
+    <section class="mt-12 bg-white shadow p-6 rounded-lg">
+        <h3 class="text-2xl font-semibold text-center mb-4">Sign Up For Free HTML Lessons</h3>
+        <form class="space-y-4 max-w-md mx-auto">
+          <label class="block">
+            Email:
+            <input type="text" class="w-full border rounded p-2 mt-1" placeholder="Your Email" />
+          </label>
+          <label class="block">
+            Password:
+            <input type="text" class="w-full border rounded p-2 mt-1" placeholder="Your Password" />
+          </label>
+          <button type="submit" class="bg-black text-white px-4 py-2 rounded hover:bg-gray-700">
+            Submit
+          </button>
+        </form>
+      </section>
   </main>
 </body>
 </html>
