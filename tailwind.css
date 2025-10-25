@@ -1,1 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tailwind CSS</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900 font-sans">
+  <header class="bg-purple-600 text-white p-6 text-center">
+    <h1 class="text-3xl font-bold">Tailwind CSS</h1>
+  </header>
 
+  <nav class="bg-purple-500 p-4 text-white flex justify-center space-x-6">
+    <a href="index.html" class="hover:underline">Home</a>
+    <a href="html.html" class="hover:underline">HTML</a>
+    <a href="css.html" class="hover:underline">CSS</a>
+    <a href="git.html" class="hover:underline">Git</a>
+    <a href="tailwind.html" class="hover:underline">Tailwind</a>
+  </nav>
+
+  <main class="max-w-3xl mx-auto p-8 bg-white shadow-md mt-8 rounded-lg">
+    <h2 class="text-2xl font-semibold mb-4">What is Tailwind CSS?</h2>
+    <p class="mb-4">
+      Tailwind CSS is a <strong>utility-first CSS framework</strong> that lets you design websites quickly using predefined classes directly in your HTML.
+    </p>
+
+    <h3 class="text-xl font-semibold mb-2">Example</h3>
+    <pre class="bg-gray-100 p-4 rounded"><code>
+&lt;button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"&gt;
+  Click Me
+&lt;/button&gt;
+    </code></pre>
+
+    <h3 class="text-xl font-semibold mt-6 mb-2">Advantages of Tailwind</h3>
+    <ul class="list-disc pl-6 space-y-1">
+      <li>Fast development with ready-to-use classes</li>
+      <li>Highly customizable through configuration</li>
+      <li>No need to leave your HTML to style elements</li>
+      <li>Responsive and mobile-friendly design built in</li>
+    </ul>
+
+    <h3 class="text-xl font-semibold mt-6 mb-2">Why Use Tailwind?</h3>
+    <p>
+      Tailwind simplifies your workflow by removing the need for custom CSS files for every small design. It’s efficient, modern, and perfect for building responsive web apps quickly.
+    </p>
+  </main>
+</body>
+</html>
