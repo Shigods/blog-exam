@@ -3,46 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Web Dev Blog</title>
+  <title>Web Development Guide</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-900 text-gray-100 font-sans">
+<body class="bg-gray-900 text-gray-100 font-sans leading-relaxed">
   <div class="max-w-5xl mx-auto p-6">
-    <header class="text-center mb-8">
-      <h1 class="text-4xl font-bold mb-2">Web Development Blog</h1>
-      <p class="text-gray-400">Learn about <strong>HTML</strong>, <em>CSS</em>, Git, and Tailwind CSS</p>
+
+    <header class="text-center mb-10">
+      <h1 class="text-5xl font-extrabold mb-3 text-blue-400">Web Development Guide</h1>
+      <p class="text-gray-400 text-lg">Learn the foundations of <strong>HTML</strong>, <em>CSS</em>, Git, and <strong>Tailwind CSS</strong></p>
       <hr class="border-gray-700 mt-4">
     </header>
 
-    <section class="mb-10">
-      <h2 class="text-3xl font-semibold mb-4">HTML Basics</h2>
-      <p>HTML stands for HyperText Markup Language. It defines the structure of web pages.<br>Below are the main topics:</p>
-      <ul class="list-disc ml-6 mt-2">
-        <li>Document structure</li>
-        <li>Text and content tags</li>
-        <li>Lists and layouts</li>
-        <li>Tables and forms</li>
+    <section class="mb-16">
+      <h2 class="text-3xl font-bold text-yellow-400 mb-3">HTML: The Structure of the Web</h2>
+      <p>HTML, or HyperText Markup Language, defines the basic structure of every website. It uses tags to represent elements like text, images, and links. Each HTML page begins with a doctype declaration and contains a head and body section that organize its content.</p>
+      <br>
+      <ul class="list-disc ml-6">
+        <li><strong>Headings:</strong> Represented by <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>.</li>
+        <li><strong>Paragraphs:</strong> Written inside <code>&lt;p&gt;</code> tags.</li>
+        <li><strong>Links:</strong> Created using the <code>&lt;a&gt;</code> tag.</li>
+        <li><strong>Images:</strong> Displayed using the <code>&lt;img&gt;</code> tag.</li>
       </ul>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML Logo" class="w-32 mt-4">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML Logo" class="w-40 mt-5">
+      <p class="mt-4">HTML provides the foundation that every web developer builds upon. Learn more from 
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" class="text-blue-400 underline">MDN Web Docs</a>.
+      </p>
     </section>
 
-    <section class="mb-10">
-      <h2 class="text-3xl font-semibold mb-4">CSS Styling</h2>
-      <p>CSS enhances the visual design of web pages.</p>
-      <ol class="list-decimal ml-6 mt-2">
-        <li>Selectors define elements to style.</li>
-        <li>Properties modify appearance.</li>
-        <li>Values determine how those properties behave.</li>
+    <section class="mb-16">
+      <h2 class="text-3xl font-bold text-green-400 mb-3">CSS: Styling the Web</h2>
+      <p>CSS, or Cascading Style Sheets, controls the appearance of a website. It defines colors, fonts, spacing, and layout. While HTML focuses on structure, CSS focuses on presentation and design. It can be written inline, internally within a <code>&lt;style&gt;</code> tag, or externally in separate files.</p>
+      <ol class="list-decimal ml-6 mt-4">
+        <li><strong>Selectors</strong> identify which elements to style.</li>
+        <li><strong>Properties</strong> define what to change (e.g., <code>color</code>, <code>margin</code>).</li>
+        <li><strong>Values</strong> specify the style (e.g., <code>blue</code>, <code>20px</code>).</li>
       </ol>
-      <div class="mt-4 bg-gray-800 p-4 rounded">
-        <span class="text-blue-400">&lt;div&gt;</span> containers and 
-        <span class="text-green-400">&lt;span&gt;</span> elements help structure and style content.
+      <div class="bg-gray-800 p-4 rounded mt-5">
+        <span>Example:</span><br>
+        <span class="text-gray-300 text-sm"><code>h1 { color: lightgreen; text-align: center; }</code></span>
       </div>
+      <p class="mt-4">With CSS, developers can transform plain HTML into visually stunning, user-friendly websites.</p>
     </section>
 
-    <section class="mb-10">
-      <h2 class="text-3xl font-semibold mb-4">Git Essentials</h2>
-      <p>Git is a <strong>version control system</strong> used by developers to manage code changes.</p>
+    <section class="mb-16">
+      <h2 class="text-3xl font-bold text-red-400 mb-3">Git: Tracking and Managing Code</h2>
+      <p>Git is a version control system that helps developers manage and track changes to code. It allows collaboration, branching, and versioning, ensuring that project history is preserved and reversible when necessary.</p>
       <div class="mt-3">
         <table class="table-auto w-full text-left border border-gray-700">
           <tr class="bg-gray-800">
@@ -51,54 +57,57 @@
           </tr>
           <tr>
             <td class="px-4 py-2 border border-gray-700"><code>git init</code></td>
-            <td class="px-4 py-2 border border-gray-700">Initialize repository</td>
+            <td class="px-4 py-2 border border-gray-700">Initialize a new Git repository</td>
           </tr>
           <tr>
-            <td class="px-4 py-2 border border-gray-700"><code>git add</code></td>
-            <td class="px-4 py-2 border border-gray-700">Add files to staging</td>
+            <td class="px-4 py-2 border border-gray-700"><code>git add .</code></td>
+            <td class="px-4 py-2 border border-gray-700">Stage all changes for commit</td>
           </tr>
           <tr>
-            <td class="px-4 py-2 border border-gray-700"><code>git commit</code></td>
-            <td class="px-4 py-2 border border-gray-700">Save changes</td>
+            <td class="px-4 py-2 border border-gray-700"><code>git commit -m "message"</code></td>
+            <td class="px-4 py-2 border border-gray-700">Save a snapshot of changes</td>
+          </tr>
+          <tr>
+            <td class="px-4 py-2 border border-gray-700"><code>git push</code></td>
+            <td class="px-4 py-2 border border-gray-700">Upload commits to a remote repository</td>
           </tr>
         </table>
       </div>
+      <p class="mt-4">Git enables efficient teamwork by allowing multiple developers to work on the same project without conflict.</p>
     </section>
 
-    <section class="mb-10">
-      <h2 class="text-3xl font-semibold mb-4">Tailwind CSS</h2>
-      <p><em>Tailwind CSS</em> is a utility-first framework for designing modern websites.</p>
-      <p class="mt-2">Visit the official docs: 
-        <a href="https://tailwindcss.com" target="_blank" class="text-blue-400 underline">Tailwind CSS</a>
-      </p>
-      <div class="bg-gray-800 p-4 rounded mt-4">
-        <h3 class="text-2xl mb-2">Features</h3>
+    <section class="mb-16">
+      <h2 class="text-3xl font-bold text-cyan-400 mb-3">Tailwind CSS: Utility-First Design</h2>
+      <p>Tailwind CSS is a utility-first CSS framework that provides prebuilt classes for rapid UI design. Instead of writing traditional CSS rules, you apply ready-to-use utility classes directly in your HTML code.</p>
+      <div class="bg-gray-800 p-5 rounded mt-4">
+        <h3 class="text-2xl mb-2 text-gray-200">Why Developers Use Tailwind CSS</h3>
         <ul class="list-disc ml-6">
-          <li>Rapid styling with utility classes</li>
-          <li>Responsive design made easy</li>
-          <li>Highly customizable</li>
+          <li>Speeds up styling by using class-based utilities.</li>
+          <li>Encourages consistent and responsive design patterns.</li>
+          <li>Integrates seamlessly with frameworks like React and Vue.</li>
         </ul>
       </div>
+      <p class="mt-4">Example: <code class="text-purple-400">class="bg-blue-500 text-white p-4 rounded"</code></p>
+      <p class="mt-2">Learn more at <a href="https://tailwindcss.com" class="text-blue-400 underline">tailwindcss.com</a>.</p>
     </section>
 
-    <section class="mb-10">
-      <h2 class="text-3xl font-semibold mb-4">Feedback Form</h2>
-      <form class="bg-gray-800 p-6 rounded">
-        <div class="mb-4">
-          <label for="name" class="block mb-1">Name</label>
-          <input id="name" type="text" class="w-full p-2 rounded bg-gray-900 border border-gray-700">
-        </div>
-        <div class="mb-4">
-          <label for="message" class="block mb-1">Message</label>
-          <textarea id="message" rows="3" class="w-full p-2 rounded bg-gray-900 border border-gray-700"></textarea>
-        </div>
-        <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">Submit</button>
+    <section class="mb-16">
+      <h2 class="text-3xl font-bold text-pink-400 mb-3">Feedback Form</h2>
+      <p>We’d love to hear your thoughts about this guide! Fill out the form below to share your feedback.</p>
+      <form class="bg-gray-800 p-6 rounded mt-4">
+        <label for="name" class="block mb-2 text-gray-300">Name</label>
+        <input id="name" type="text" placeholder="Enter your name" class="w-full mb-4 p-2 rounded bg-gray-900 border border-gray-700">
+
+        <label for="email" class="block mb-2 text-gray-300">Email</label>
+        <input id="email" type="email" placeholder="Enter your email" class="w-full mb-4 p-2 rounded bg-gray-900 border border-gray-700">
+
+        <label for="message" class="block mb-2 text-gray-300">Message</label>
+        <textarea id="message" rows="4" placeholder="Your feedback..." class="w-full mb-4 p-2 rounded bg-gray-900 border border-gray-700"></textarea>
+
+        <button type="submit" class="bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded">Submit Feedback</button>
       </form>
     </section>
 
-    <footer class="text-center text-gray-400 mt-10">
-      <p>&copy; 2025 Web Dev Blog. Built with Tailwind CSS.</p>
-    </footer>
   </div>
 </body>
 </html>
